@@ -56,7 +56,7 @@ def main():
             for i in range(0, len(submissionStudent)):
                 if studentID == submissionStudent[i]:
                     score = submissionScore[i]
-                    assignmentIndex = assignmentIDs.index(submissionAssignment)
+                    assignmentIndex = assignmentIDs.index(submissionAssignment[i])
                     weight = assignmentWeight[assignmentIndex]
                     maxScore += weight
                     studentScore += int(score) * int(weight)
