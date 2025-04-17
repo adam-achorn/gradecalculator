@@ -71,9 +71,9 @@ def main():
             for i in range(0, len(submissionAssignment)):
                 if assignmentID == submissionAssignment[i]:
                     assignmentScores.append(int(submissionScore[i]))
-            print('Mini:', min(assignmentScores))
-            print('Avg', sum(assignmentScores) // len(assignmentScores))
-            print('Max:', max(assignmentScores))
+            print('Mini:', f'{min(assignmentScores)}%')
+            print('Avg', f'{sum(assignmentScores) // len(assignmentScores)}%')
+            print('Max:', f'{max(assignmentScores)}%')
     elif option == '3':
         assignmentName = input('What is the assignment name: ')
         if assignmentName not in assignmentNames:
