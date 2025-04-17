@@ -60,7 +60,7 @@ def main():
                     weight = assignmentWeight[assignmentIndex]
                     maxScore += weight
                     studentScore += int(score) * int(weight)
-            print(round(studentScore / maxScore))
+            print(f'{round(studentScore / maxScore)}%')
     elif option == '2':
         assignmentName = input('What is the assignment name: ')
         if assignmentName not in assignmentNames:
@@ -71,8 +71,8 @@ def main():
             for i in range(0, len(submissionAssignment)):
                 if assignmentID == submissionAssignment[i]:
                     assignmentScores.append(int(submissionScore[i]))
-            print('Mini:', f'{min(assignmentScores)}%')
-            print('Avg', f'{sum(assignmentScores) // len(assignmentScores)}%')
+            print('Min:', f'{min(assignmentScores)}%')
+            print('Avg:', f'{sum(assignmentScores) // len(assignmentScores)}%')
             print('Max:', f'{max(assignmentScores)}%')
     elif option == '3':
         assignmentName = input('What is the assignment name: ')
